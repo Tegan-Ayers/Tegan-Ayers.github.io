@@ -1,0 +1,79 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #3b3a30;
+}
+
+/* Add background color to the top navigation */
+.topnav {
+  background-color: #c0ded9;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  text-align: center;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #b2c2bf;
+}
+
+/* Make two columns */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Modify left column */
+.left {
+  width: 25%;
+  text-align: center;
+  padding: 2%;
+}
+
+/* Modify right column */
+.right {
+  width: 75%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+/* Size the title (name) */
+.intro-title {
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+/* Size the tagline (pronouns) */
+.intro-tagline {
+  margin-top: 0;
+}
+
+/* Size the image */
+.intro-image {
+  width: 70%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  /* padding: 1%; */
+}
+
+/* Size the icons */
+.fa {
+  font-size: 36px;
+  width: 15%;
+  text-align: center;
+  text-decoration: none;
+  margin: 3%;
+  padding: 2%;
+}
