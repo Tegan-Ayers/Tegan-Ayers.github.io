@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- site metadata -->
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Assignment 6</title>
+    </head>
+
+    <!-- main site content -->
+    <body style="background-color:whitesmoke;">
+
+        <!-- top navigation bar -->
+        <div class="topnav">
+            <a href="./about.html">About</a>
+            <a href="./projects.html">Projects</a>
+            <a href="index.html">Home</a>
+        </div>
+
+        <!-- create two columns for body -->
+        <div class="container">
+    
+            <!-- right column -->
+            <div class="column right">
+                <p class="intro-title">Assignment 6: Portfolio Piece</p>
+                <p>Full Notebook <a href="https://observablehq.com/d/d27f23764c2f4dd2"><strong>HERE</strong></a></p>
+                <p>The Let's Get Ready dataset is contained within an Excel workbook and consists of four sheets: Transition Students, Success Students, Transition Coaches and Success Coaches. The definitions of Transition and Success groups are provided below.</p>
+                <ul>
+                    <li><strong>Transition Students: </strong> High school seniors preparing for college. Students are provided "virtual support throughout their senior year and during the vulnerable period between college acceptance and attendance, when students with fewer resources and less knowledge about college life may fail to matriculate."</li>
+                    <li><strong>Success Students: </strong> Current college students. Students are provided "with critical resources, tools, and support systems needed to adapt to college life and succeed year-over-year."</li>
+                </ul>
+                <p class="subtitle">Data Cleaning</p>
+                <p>The data was first cleaned and grouped such that two objects were created, students and coaches. A "group" column was created to delineate between transition and success groups. The table below outlines the number of Transition and Success students and coaches.</p>
+                <table>
+                    <tr>
+                      <th>Group</th>
+                      <th>Total</th>
+                    </tr>
+                    <tr>
+                      <td>Transition Students</td>
+                      <td>421</td>
+                    </tr>
+                    <tr>
+                      <td>Success Students</td>
+                      <td>630</td>
+                    </tr>
+                    <tr>
+                      <td>Transition Coaches</td>
+                      <td>32</td>
+                    </tr>
+                    <tr>
+                      <td>Success Coaches</td>
+                      <td>71</td>
+                    </tr>
+                </table>
+                <p>The cleaned Students Object is shown below. Searching for "transition" returns a total of 421 results, which agrees with the table above.</p>
+                <iframe style="margin-top: 1%; margin-bottom: 2%" width="100%" height="392" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=students_table%2Cviewof+search"></iframe>
+                <p class="subtitle">Exploratory Data Analysis</p>
+                <p>Basic EDA was performed to gain an understanding of the data.</p>
+                <p>First, student ratings of their relationship with their coach was plotted. The question was phrased as "I have a positive relationship with my coach." Almost all students in both groups, Transition and Success, agreed with this statement.</p>
+                <iframe width="100%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=relationship_plot"></iframe>
+                <p>Next, students were asked to rate "I would recommend my coach to other Let's Get Ready students." Again, almost all students in both groups agreed with this statement.</p>
+                <iframe width="100%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=recommendation_plot"></iframe>
+                <p>Finally, the impact of coronavirus was inspected for Transition Students (left) and Transition Coaches (right). Students were asked "To what extent has the coronavirus negatively impacted your college plans?" while coaches were asked "To what extent has the coronavirus negatively impacted the students you serve?". Interestingly, student ratings were centered around "A moderate amount" while coach ratings were centered around "A lot". This means coaches were perceiving a larger negative impact of coronavirus to their students than students themselves were perceiving. Note the y-axis scales for both plots.</p>
+                <iframe width="45%" height="350" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=transition_students_covid_impact_plot"></iframe> 
+                <iframe width="45%" height="350" frameborder="0"  src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=transition_coaches_covid_impact_plot"></iframe>
+                <p>Unfortunately, almost all the data is a discrete scale (Strongly Agree, Agree, Disagree, Strongly Disagree), so computing correlations isn't very informative. Instead, most of this analysis will likely need to revolve around the text data and utilize NLP techniques.</p>
+                <p class="subtitle" style="margin-top: 2%">Citations</p>
+                <ul>
+                    <li>https://github.com/cs7290/ready/blob/main/data/Let's%20Get%20Ready%20Overview%20and%20Project%20Details.pdf</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
