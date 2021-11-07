@@ -24,8 +24,8 @@
         <div class="container">
     
             <!-- right column -->
-            <div class="column right">
-                <p class="intro-title">Assignment 6: Portfolio Piece</p>
+            <div class="column center">
+                <p class="subtitle" style="font-size: 32px">Assignment 6: Portfolio Piece</p>
                 <p>Full Notebook <a href="https://observablehq.com/d/d27f23764c2f4dd2"><strong>HERE</strong></a></p>
                 <p>The Let's Get Ready dataset is contained within an Excel workbook and consists of four sheets: Transition Students, Success Students, Transition Coaches and Success Coaches. The definitions of Transition and Success groups are provided below.</p>
                 <ul>
@@ -60,22 +60,23 @@
                 <iframe style="margin-top: 1%; margin-bottom: 2%" width="100%" height="392" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=students_table%2Cviewof+search"></iframe>
                 <p class="subtitle">Exploratory Data Analysis</p>
                 <p>Basic EDA was performed to gain an understanding of the data.</p>
-                <p>First, student ratings of their relationship with their coach was plotted. The question was phrased as "I have a positive relationship with my coach." Almost all students in both groups, Transition and Success, agreed with this statement.</p>
-                <iframe width="100%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=relationship_plot"></iframe>
-                <p>Next, students were asked to rate "I would recommend my coach to other Let's Get Ready students." Again, almost all students in both groups agreed with this statement.</p>
-                <iframe width="100%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=recommendation_plot"></iframe>
-                <p>Finally, the impact of coronavirus was inspected for Transition Students (left) and Transition Coaches (right). Students were asked "To what extent has the coronavirus negatively impacted your college plans?" while coaches were asked "To what extent has the coronavirus negatively impacted the students you serve?". Interestingly, student ratings were centered around "A moderate amount" while coach ratings were centered around "A lot". This means coaches were perceiving a larger negative impact of coronavirus to their students than students themselves were perceiving. Note the y-axis scales for both plots.</p>
-                <iframe width="45%" height="350" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=transition_students_covid_impact_plot"></iframe> 
-                <iframe width="45%" height="350" frameborder="0"  src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=transition_coaches_covid_impact_plot"></iframe>
+                <p>First, student ratings of their relationship with their coach was plotted. The question was phrased as "I have a positive relationship with my coach." Almost all students in both groups, Transition (green) and Success (orange), agreed with this statement.</p>
+                <iframe width="100%" height="505" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=coach_relationship_grouped"></iframe>
+                <p>Next, students were asked to rate "I would recommend my coach to other Let's Get Ready students." Again, almost all students in both groups agreed with this statement. Transition students are plotted in green and Success students are shown in orange.</p>
+                <iframe width="100%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=coach_recommendation_grouped"></iframe>
+                <p>Finally, the impact of coronavirus was inspected for Students (left, Transition: green, Success: orange) and Coaches (right, Transition: green, Success: orange). Students were asked "To what extent has the coronavirus negatively impacted your college plans?" while coaches were asked "To what extent has the coronavirus negatively impacted the students you serve?". Interestingly, student ratings were centered around "A moderate amount" while coach ratings were centered around "A lot". This means coaches were perceiving a larger negative impact of coronavirus to their students than students themselves were perceiving. Note the y-axis scales for both plots.</p>
+                <iframe width="48%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=coronavirus_impact_students_grouped"></iframe>
+                <iframe width="48%" height="506" frameborder="0" src="https://observablehq.com/embed/d27f23764c2f4dd2?cells=coronavirus_impact_coaches_grouped"></iframe>
                 <p class="subtitle" style="margin-top: 2%">Proposal</p>
                 <p>Create a data dashboard with radio buttons to toggle between students and coaches, transition and success groups. Data will mostly be displayed as bar charts. We can also extract themes from free text data (TF-IDF). Themes can be displayed in written format, word cloud or text graph. An example is provided below.</p>
-                <img src="dashboard-example.JPG" alt="Sample Dashboard">
+                <img src="dashboard-example.JPG" alt="Sample Dashboard" width="400" style="display: block; margin-left: auto; margin-right: auto;">
                 <p class="subtitle" style="margin-top: 2%">Stakeholder Feedback (10/28)</p>
                 <ul>
                   <li>Stakeholder approved of proposal for data dashboard.</li>
                   <li>Most interested in thematic analysis of free responses.</li>
                   <li>Interested in grouping themes by subsets of students. For example, are thematic responses different for those students who stated COVID has had a high impact versus students who stated COVID has had a low impact.</li>
                   <li>Suggested possibly being able to provide some limited demographic data (e.g. gender, home state), but we'll proceed without that data for now.</li>
+                  <li>If low on time, we should focus our efforts more on the Student responses.</li>
                 </ul>
                 
             </div>
