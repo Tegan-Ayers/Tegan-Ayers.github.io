@@ -7,16 +7,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
-        <title>Tegan Ayers Github About</title>
+        <title>Tegan Ayers Personal Website</title>
     </head>
 
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+
     <!-- main site content -->
-    <body style="background-color:whitesmoke;">
+    <body class="background">
 
         <!-- top navigation bar -->
         <div class="topnav">
-            <a href="./about.html">About</a>
+            <a href="./about.html" style="margin-right: 14%">About</a>
             <a href="./projects.html">Projects</a>
             <a href="index.html">Home</a>
+        </div>
+
+        <!-- create two columns for body -->
+        <div class="container">
+
+            <!-- center column -->
+            <div class="column center-timeline">
+                
+                <p>Scroll through the timeline below to see a summary of my education and professional experience.</p>
+                <p>Interested in learning more? <a class=button href="./Ayers_Resume_2022.pdf" target="_blank">Check out my resume!</a></p>
+                <br>
+
+                <ul class="timeline">
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Rochester Institute of Technology</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>Aug 2013 - May 2018</span>
+                        <p>Bachelors of Science in Biomedical Engineering</p>
+                        <p class="timeline-item-description">Multidisciplinary Senior Design Project: Biometric and Atmospheric Sensing Earphones<a target="_blank" href="https://docs.google.com/presentation/d/17LnflnWTkcFgQxY9PjfWrOYPBY85kchzd0jIOVq84MY/edit?usp=sharing">[LINK]</a></p>
+                        <p class="timeline-item-description">Graduated Magna Cum Laude</p>
+                        <p>Masters of Science in Science, Technology and Public Policy</p>
+                        <p class="timeline-item-description">Thesis: Self-Regulation within the Wearable Device Industry and the Alignment to Device Users' Perceptions of Health Data Privacy<a target="_blank" href="https://scholarworks.rit.edu/theses/9763/">[LINK]</a></p>
+                        <p class="timeline-item-description">Graduated Magna Cum Laude</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Borkholder Laboratory</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>May 2015 - May 2016</span>
+                        <p>Lab Assistant</p>
+                        <p class="timeline-item-description">Assisted with the development of a non-invasive cardiac monitoring device by developing and executing biometric sensor validation test plans.</p>
+                        <p class="timeline-item-description">Developed test plans for photoplethysmograph (PPG) and ballistocardiogram (BCG) measurements.</p>
+                        <p class="timeline-item-description">Moderated data collection of cardiac failure patients in the hospital.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Profusa</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>Aug 2015 - Dec 2015</span>
+                        <p>Preclinical Engineering Co-op</p>
+                        <p class="timeline-item-description">Assisted with the development of bioabsorbable, continuously-monitoring blood oxygen and blood glucose sensors.</p>
+                        <p class="timeline-item-description">Performed in vitro and in vivo (swine) preclinical testing.</p>
+                        <p class="timeline-item-description">Presented results to executives at all-company quarterly business review.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">ZSX Medical</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>May 2016 - Aug 2016</span>
+                        <p>V/V Engineering Intern</p>
+                        <p class="timeline-item-description">Assisted with the development of a bioabsorbable wound closure device to aid in laparoscopic vaginal cuff closure during hysterectomies.</p>
+                        <p class="timeline-item-description">Simulated forces acting on device and performed verification tests to establish design inputs.</p>
+                        <p class="timeline-item-description">Assisted with procedure mapping and data acquisition during a cadaver study.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Bose Corporation</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>Jan 2017 - July 2017</span>
+                        <p>Analytical Research Engineer Co-op</p>
+                        <p class="timeline-item-description">Designed and tested PPG- and EMG-driven algorithms for heart rate variability, respiration rate, stress quantification and expression detection. Resulted in three patents.</p>
+                        <p class="timeline-item-description">Used MATLAB to analyze biometric data collected during sleep studies.</p>
+                        <p class="timeline-item-description">Presented an overview of FDA Regulatory processes to large group of engineers and business representatives.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Bose Corporation</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>June 2018 - Present</span>
+                        <p>Research Engineer IV</p>
+                        <p class="timeline-item-description">Led multidisciplinary front-end research teams for Sleep and Hear categories, investigating technical (e.g., in-ear biometric sensing, app analytics and recommender systems) and experiential concepts (e.g., sleep coaching).</p>
+                        <p class="timeline-item-description">Developed state-of-the-art XGBoost model in Python for IMU-driven sleep-wake classification using 120+ nights of data. Model performed on par with competitors' models, including an LSTM network.</p>
+                        <p class="timeline-item-description">Created TCN models in Python to measure blood pressure from PPG sensor features using an open-source dataset. Models performed within accuracy limits specified by ISO 81060 standards.</p>
+                        <p class="timeline-item-description">Designed several MATLAB tools for modulating frequency and time domain audio parameters, enabling real-time design and playback of audio tracks, and running audiological tests such as acceptable noise level testing.</p>
+                        <p class="timeline-item-description">Implemented a Bayesian optimizer using MATLAB tools for determining optimal feedforward ANC filter parameters.</p>
+                        <p class="timeline-item-description">Championed the successful creation of an Android application that enabled two large-scale (300+) Clinical Research studies. Developed requirements, managed developer, enforced timelines/budget, and coordinated with FW team.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <h2 class="timeline-item-title">Northeastern University</h2><span class="date"><i class="fa fa-calendar fa-2x mr-1"></i>Aug 2019 - Dec 2022 (expected)</span>
+                        <p>Masters of Science in Data Science</p>
+                        <p class="timeline-item-description">Courses: Supervised Learning, Unsupervised Learning, Data Visualization using Web Technologies, Deep Learning</p>
+                    </li>
+                </ul>
+
+                <br>
+                
+            </div>
         </div>
     </body>
